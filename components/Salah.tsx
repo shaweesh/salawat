@@ -14,11 +14,11 @@ export default function Salah(props:any) {
       }
 
     const getData=()=>{
-        const date = ("0" + (new Date().getDate())).slice(-2);
+        const day = ("0" + (new Date().getDate())).slice(-2);
         const month = ("0" + (new Date().getMonth() + 1)).slice(-2)
         const year = new Date().getFullYear();
         let a = salawat.filter((b) => {
-            return (b.month == month && b.day == date)
+            return (b.month == month && b.day == day)
         });
         return a[0];
         
