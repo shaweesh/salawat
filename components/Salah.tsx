@@ -18,7 +18,7 @@ export default function Salah(props:any) {
         const month = ("0" + (new Date().getMonth() + 1)).slice(-2)
         const year = new Date().getFullYear();
         let a = salawat.filter((b) => {
-            return (b.month == "08" && b.day == "12")
+            return (b.month == month && b.day == date)
         });
         return a[0];
         
