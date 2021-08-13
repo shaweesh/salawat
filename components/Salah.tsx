@@ -23,9 +23,10 @@ export default function Salah(props:any) {
         return a[0];
         
     }
+    
     let _ = getData();
 
-    if(props.saveTime) {
+    if(props.daySaveTime.toString()=="true") {
         PrayerTime = {
             fajer: moment(`${_.fajer}`, 'hh:mm').add(1,'h').format("hh:mm"),
             sunrise: moment(`${_.sunrise}`, 'hh:mm').add(1,'h').format("hh:mm"),
