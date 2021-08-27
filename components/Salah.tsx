@@ -50,7 +50,7 @@ export default function Salah(props:any) {
             <Text style={styles.appFontSize}>الفجر: {PrayerTime.fajer}</Text>
             <Text style={styles.appFontSize}>الشروق: {PrayerTime.sunrise}</Text>
             <Text style={styles.appFontSize}>{moment().format("dddd") == 'Friday' 
-                    ? `الظهر: ${PrayerTime.dhuhur}\nالجمعة: ${moment(PrayerTime.dhuhur, 'hh:mm').add(20,'m').format("HH:mm")}` 
+                    ? `الجمعة: ${PrayerTime.dhuhur}` 
                     : `الظهر: ${PrayerTime.dhuhur}` }</Text>
             <Text style={styles.appFontSize}>العصر: {PrayerTime.asr}</Text>
             <Text style={styles.appFontSize}>المغرب: {PrayerTime.maghreb}</Text>
